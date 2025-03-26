@@ -4,14 +4,19 @@
 
 ### Prerequisites
 
-- Python installed
-- pip installed
+- [Python](https://www.python.org/downloads/)
+- pip
 
 ### Environment Setup
 
-1. Create virtual environment: `python -m venv [directory name (Ex. ".env")]` (Mac)
-2. Install packages: `pip3 install requirements.txt` (Mac)
-3. Set Python notebook kernel to `.env`
+1. Create virtual environment:
+    - Mac: `python -m venv [directory name (Ex. ".env")]`
+    - Windows: `py -3 -m venv [directory name]`
+2. Activate the virtual environment:
+    - Mac: `source [directory name]/bin/activate`
+    - Windows: `[directory name]\Scripts\activate.bat`
+3. Install packages: `pip3 install requirements.txt`
+4. Set Python notebook kernel to `.env`
 
 ### Build Model
 
