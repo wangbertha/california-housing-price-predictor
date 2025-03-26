@@ -1,0 +1,21 @@
+<center>
+  <form method="POST">
+    <label for="">Housing Age: <input name="housing_age" /></label>
+    <label for="">Total Rooms: <input name="total_rooms" /></label>
+    <label for="">Total Bedrooms: <input name="total_bedrooms" /></label>
+    <label for="">Number of Households: <input name="households" /></label>
+    <label for="">Median Income: <input name="median_income" /></label>
+    <label for=""
+      >Ocean Proximity:
+      <select name="ocean_proximity">
+        <option value="<1H OCEAN">Less than 1 hr from ocean</option>
+        <option value="INLAND">Inland</option>
+        <option value="ISLAND">Island</option>
+        <option value="NEAR BAY">Near Bay</option>
+        <option value="NEAR OCEAN">Near Ocean</option>
+      </select></label
+    >
+    <button type="submit">Submit</button>
+    <h1 id="predi">{{ prediction_text }}</h1>
+  </form>
+</center>
