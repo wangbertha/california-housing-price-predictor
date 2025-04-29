@@ -27,10 +27,10 @@ def hello_world():
             return render_template("index.html", error_text = "Error: Check whether all fields inputs are provided.")
         else:
             housing_age = int(request.form['housing_age'])
-            total_rooms = int(request.form['total_rooms'])
-            total_bedrooms = int(request.form['total_bedrooms'])
-            households = int(request.form['households'])
-            median_income = int(request.form['median_income'])
+            total_rooms = np.log(int(request.form['total_rooms']) + 1)
+            total_bedrooms = np.log(int(request.form['total_bedrooms']) + 1)
+            households = np.log(int(request.form['households']) + 1)
+            median_income = int(request.form['median_income']) / 10000
             ocean_proximity = request.form['ocean_proximity']
             h_ocean = 0
             inland = 0
