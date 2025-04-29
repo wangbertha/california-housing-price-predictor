@@ -1,10 +1,27 @@
-<center>
-  <form method="POST">
-    <label for="">Housing Age: <input name="housing_age" /></label>
-    <label for="">Total Rooms: <input name="total_rooms" /></label>
-    <label for="">Total Bedrooms: <input name="total_bedrooms" /></label>
-    <label for="">Number of Households: <input name="households" /></label>
-    <label for="">Median Income: <input name="median_income" /></label>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static',filename='css/index.css') }}"
+/>
+
+<div class="container">
+  <p class="header">California Housing Price Estimator</p>
+  <form method="POST" class="prediction-form">
+    <label for=""
+      >Housing Age: <input type="number" name="housing_age"
+    /></label>
+    <label for=""
+      >Total Rooms: <input type="number" name="total_rooms"
+    /></label>
+    <label for=""
+      >Total Bedrooms: <input type="number" name="total_bedrooms"
+    /></label>
+    <label for=""
+      >Number of Households: <input type="number" name="households"
+    /></label>
+    <label for=""
+      >Median Income: <input type="number" name="median_income"
+    /></label>
     <label for=""
       >Ocean Proximity:
       <select name="ocean_proximity">
@@ -16,6 +33,10 @@
       </select></label
     >
     <button type="submit">Submit</button>
-    <h1 id="predi">{{ prediction_text }}</h1>
   </form>
-</center>
+  <div id="prediction-container" class="prediction-container">
+    <p>Fill in the fields above to generate your prediction!</p>
+    <p class="prediction">{{ prediction_text }}</p>
+    <p class="error">{{ error_text }}</p>
+  </div>
+</div>
