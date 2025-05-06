@@ -38,6 +38,7 @@ This is a web application that predicts the cost of a home in California, based 
 - Frontend: HTML/CSS
 - Backend: Flask
 - Data Exploration: Python
+- Model Generation: Python
 
 ## Source
 
