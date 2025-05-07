@@ -22,11 +22,6 @@ This is a web application that predicts the cost of a home in California, based 
 3. Install packages: `pip3 install -r requirements.txt`
 4. Set Python notebook kernel to `.env`
 
-### Build Model
-
-1. Run All from `data_processing.ipynb`
-2. A new file, `model.pkl`, should appear in your project
-
 ### Run Web App
 
 1. Enter app folder from terminal: `cd app`
